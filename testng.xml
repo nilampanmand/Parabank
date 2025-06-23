@@ -4,15 +4,21 @@
 
 
 <suite name="Suite">
- 
+  <listeners>
+     <listener class-name="listeners.ExtentReportManager"></listener>
+  </listeners>
 
 
   <test thread-count="5" name="Test">
   <parameter name="os" value="Windows"></parameter>
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="testCases.TC001_AccountRegistrationTest"/> 
-       <class name="testCases.TC001_AccountLogIn"/>
+     <!--  <class name="testCases.TC001_AccountRegistrationTest"/> -->
+       <!-- <class name="testCases.TC001_AccountLogIn"/> -->
+      <!--<class name="testCases.TC001_UpdateUserInfo"></class> -->
+      <!--  <class name="testCases.TC001_RequestLoan"></class> -->
+       <!-- <class name="testCases.TC001_Transfer_Funds"></class> -->
+       <class name="testCases.TC001_AccountOverview"></class>
     <!--  <class name="testCases.TC001_LoginDDT"/> -->
     </classes>
   </test> <!-- Test -->

@@ -6,7 +6,6 @@ import pageObjects.AccRegistrationPage;
 import pageObjects.HomePage;
 import testBase.BaseClass;
 
-@SuppressWarnings("rawtypes")
 public class TC001_AccountRegistrationTest extends BaseClass {
 
 	

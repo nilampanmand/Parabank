@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 import pageObjects.LogIn;
 import testBase.BaseClass;
 
-@SuppressWarnings("rawtypes")
 public class TC001_AccountLogIn extends BaseClass {
 
 	@Test(groups={"Sanity", "Master"})

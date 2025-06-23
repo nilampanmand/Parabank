@@ -12,7 +12,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
-public class BaseClass<TakeScreenshot> {
+public class BaseClass {
 
 public   WebDriver driver;
 public Properties p;	
@@ -26,12 +26,7 @@ public Properties p;
 		FileReader file= new FileReader("./src//test//resources//config.properties");
 		p= new Properties();
 		p.load(file);
-		
-		
-		
-		
-		
-		
+	
 		switch(br.toLowerCase())
 		{
 		case "chrome" : driver=new ChromeDriver(); break;

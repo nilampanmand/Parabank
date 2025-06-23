@@ -7,7 +7,6 @@ import Utilities.DataProviders;
 import pageObjects.LogIn;
 import testBase.BaseClass;
 
-@SuppressWarnings("rawtypes")
 public class TC001_LoginDDT extends BaseClass {
 	
 	@SuppressWarnings("null")

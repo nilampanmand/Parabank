@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-22T12:12:41 IST" name="Suite" finished-at="2025-06-22T12:12:58 IST" duration-ms="17260">
+  <suite started-at="2025-06-23T10:49:51 IST" name="Suite" finished-at="2025-06-23T10:49:59 IST" duration-ms="8052">
     <groups>
       <group name="Master">
-        <method signature="TC001_AccountLogIn.acc_login()[pri:0, instance:testCases.TC001_AccountLogIn@4b5189ac]" name="acc_login" class="testCases.TC001_AccountLogIn"/>
-        <method signature="TC001_AccountRegistrationTest.acc_registration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@42a15bdc]" name="acc_registration" class="testCases.TC001_AccountRegistrationTest"/>
+        <method signature="TC001_AccountOverview.acc_overview()[pri:0, instance:testCases.TC001_AccountOverview@4bdeaabb]" name="acc_overview" class="testCases.TC001_AccountOverview"/>
       </group> <!-- Master -->
-      <group name="Sanity">
-        <method signature="TC001_AccountLogIn.acc_login()[pri:0, instance:testCases.TC001_AccountLogIn@4b5189ac]" name="acc_login" class="testCases.TC001_AccountLogIn"/>
-      </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="TC001_AccountRegistrationTest.acc_registration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@42a15bdc]" name="acc_registration" class="testCases.TC001_AccountRegistrationTest"/>
+        <method signature="TC001_AccountOverview.acc_overview()[pri:0, instance:testCases.TC001_AccountOverview@4bdeaabb]" name="acc_overview" class="testCases.TC001_AccountOverview"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2025-06-22T12:12:41 IST" name="Test" finished-at="2025-06-22T12:12:58 IST" duration-ms="17260">
-      <class name="testCases.TC001_AccountLogIn">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountLogIn@4b5189ac]" started-at="2025-06-22T12:12:49 IST" name="setup" finished-at="2025-06-22T12:12:55 IST" duration-ms="5219" status="PASS">
+    <test started-at="2025-06-23T10:49:51 IST" name="Test" finished-at="2025-06-23T10:49:59 IST" duration-ms="8052">
+      <class name="testCases.TC001_AccountOverview">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountOverview@4bdeaabb]" started-at="2025-06-23T10:49:52 IST" name="setup" finished-at="2025-06-23T10:49:57 IST" duration-ms="5343" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,33 +29,46 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="acc_login()[pri:0, instance:testCases.TC001_AccountLogIn@4b5189ac]" started-at="2025-06-22T12:12:55 IST" name="acc_login" finished-at="2025-06-22T12:12:58 IST" duration-ms="3340" status="PASS">
+        <test-method signature="acc_overview()[pri:0, instance:testCases.TC001_AccountOverview@4bdeaabb]" started-at="2025-06-23T10:49:57 IST" name="acc_overview" finished-at="2025-06-23T10:49:59 IST" duration-ms="2349" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "com.aventstack.extentreports.ExtentTest.pass(String)" because "this.test" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "com.aventstack.extentreports.ExtentTest.pass(String)" because "this.test" is null
+at listeners.ExtentReportManager.onTestSuccess(ExtentReportManager.java:46)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:119)
+at org.testng.internal.invokers.TestInvoker.runTestResultListener(TestInvoker.java:285)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:777)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- acc_login -->
-      </class> <!-- testCases.TC001_AccountLogIn -->
-      <class name="testCases.TC001_AccountRegistrationTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegistrationTest@42a15bdc]" started-at="2025-06-22T12:12:41 IST" name="setup" finished-at="2025-06-22T12:12:47 IST" duration-ms="6162" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="acc_registration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@42a15bdc]" started-at="2025-06-22T12:12:47 IST" name="acc_registration" finished-at="2025-06-22T12:12:49 IST" duration-ms="2456" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acc_registration -->
-      </class> <!-- testCases.TC001_AccountRegistrationTest -->
+        </test-method> <!-- acc_overview -->
+      </class> <!-- testCases.TC001_AccountOverview -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
